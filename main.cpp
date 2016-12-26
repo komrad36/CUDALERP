@@ -32,6 +32,7 @@
 //
 
 #include <chrono>
+#include <cstring>
 #include <iostream>
 
 #include "CUDALERP.h"
@@ -44,7 +45,6 @@ using namespace std::chrono;
 int main() {
 	constexpr auto warmups = 2000;
 	constexpr auto runs = 2000;
-	constexpr bool multithreading = true;
 
 	auto image = new uint8_t[4];
 	image[0] = 255;
