@@ -6,13 +6,16 @@
 *	kareem.omar@uah.edu
 *	https://github.com/komrad36
 *
-*	Last updated Dec 26, 2016
+*	Last updated Jan 7, 2016
 *******************************************************************/
 //
 // The file CUDALERP.h exposes two extremely high performance GPU
 // resize operations,
 // CUDALERP (bilinear interpolation), and 
-// CUDANERP (nearest neighbor interpolation).
+// CUDANERP (nearest neighbor interpolation), for 8-bit unsigned
+// integer (i.e. grayscale) data.
+//
+// For 32-bit float data, see the CUDAFLERP project instead.
 //
 // CUDALERP offers superior accuracy to CUDA's built-in texture
 // interpolator at comparable performance. The accuracy if compiled
